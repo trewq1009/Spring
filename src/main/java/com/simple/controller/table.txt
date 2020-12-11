@@ -1,0 +1,13 @@
+
+// 테이블 생성 코드
+
+create table score(
+    num number(10),
+    name varchar2(30),
+    kor varchar2(30),
+    eng varchar2(30),
+    math varchar2(30)
+
+);
+alter table score add constraint score_pk primary key (num);	// 넘버에 프라이머리 키 등록
+create sequence score_seq start with 1 increment by 1 nocache;	// 스퀸스 생성
